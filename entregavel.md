@@ -37,7 +37,7 @@
 
         Critérios objetivos de qualidade (DoD, Validação de Cobertura)
 
-    * O mais importante, dada a severidade indicar quais regras usar, problemas complexos explicações claras, problemas simples soluções claras e curtas
+    * O mais importante, dada a severidade indicar quais regras usar. Problemas complexos explicações claras, problemas simples soluções simples e curtas
 
 ## Modelos usados
 LLM_PROVIDER=google
