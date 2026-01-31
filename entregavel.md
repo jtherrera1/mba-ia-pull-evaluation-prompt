@@ -5,7 +5,8 @@
   
     Define explicitamente o papel, senioridade e modelo mental esperado
     Direciona o vocabulário, nível de detalhe, trade-offs e critérios de decisão
-    Reduz respostas genéricas e “acadêmicas”
+    Cria um cenário que ajude a definir um contexto da personalidade do experto.
+    Defina os atores e conceitos para limitar o mundo onde será aplicado o prompt 
 
 - few_shot_learning
 
