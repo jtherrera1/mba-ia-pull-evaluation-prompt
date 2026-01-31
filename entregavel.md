@@ -49,7 +49,10 @@ EVAL_MODEL=gemini-2.5-pro
 ## Custo
 
 ![custo gerado pelo processamento](custo.png)
+
 ## Resultados
 
 ![resultado esperado](resultado.png)
 
+## Prompt
+https://smith.langchain.com/prompts/bug-to-user-story-v2?organizationId=4072ddb2-6f9b-4db7-840f-a1a5c0959040
