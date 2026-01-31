@@ -27,9 +27,13 @@
         Prioridade (P0–P3)
 
     * Adicionar Regras claras de:
+
         Cobertura
+
         Limite de cenários
+  
         Modo Simples / Moderado / Complexo
+
         Critérios objetivos de qualidade (DoD, Validação de Cobertura)
 
     * O mais importante, dada a severidade indicar quais regras usar, problemas complexos explicações claras, problemas simples soluções claras e curtas
