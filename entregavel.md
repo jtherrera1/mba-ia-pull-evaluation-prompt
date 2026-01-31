@@ -2,11 +2,13 @@
 
 ## Técnicas Aplicadas
 - role_prompting
+  
     Define explicitamente o papel, senioridade e modelo mental esperado
     Direciona o vocabulário, nível de detalhe, trade-offs e critérios de decisão
     Reduz respostas genéricas e “acadêmicas”
 
 - few_shot_learning
+
     Definir exemplos realistas de entrada e saída
 
     Com isso o modelo entende:
@@ -14,7 +16,7 @@
     * Como os títulos são escritos
     * O nível de granularidade esperado em cada bloco
 
-- rubric-based_prompting
+- rubric_based_prompting
 
     * Definir estrutura rígida em 13 seções
 
