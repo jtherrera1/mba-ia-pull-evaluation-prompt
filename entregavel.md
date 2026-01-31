@@ -35,7 +35,9 @@
 
 ## Modelos usados
 LLM_PROVIDER=google
+
 LLM_MODEL=gemini-2.5-pro
+
 EVAL_MODEL=gemini-2.5-pro
 
 ## Custo
