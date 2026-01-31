@@ -31,7 +31,7 @@
         Modo Simples / Moderado / Complexo
         Critérios objetivos de qualidade (DoD, Validação de Cobertura)
 
-    * O mais importante, dada a severidade indicar quias regras usar, problemas complexos explicações claras, problemas simples soluções claras e curtas
+    * O mais importante, dada a severidade indicar quais regras usar, problemas complexos explicações claras, problemas simples soluções claras e curtas
 
 ## Modelos usados
 LLM_PROVIDER=google
