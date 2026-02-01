@@ -56,3 +56,35 @@ EVAL_MODEL=gemini-2.5-pro
 
 ## Prompt
 https://smith.langchain.com/hub/herrera-fullcyle-desafio2/h3rr3ra
+
+## Como Executar
+```bash
+1. Configurar ambiente
+pyenv activate mba-desafio-2
+pip install -r requirements.txt
+
+3. Configurar credenciais
+cp .env.example .env
+
+Edite .env com suas API keys
+
+3. Pull do prompt inicial
+python src/pull_prompts.py
+
+4. Validar estrutura do prompt otimizado
+pytest tests/test_prompts.py
+
+5. Push do prompt otimizado para LangSmith
+
+python src/push_prompts.py
+
+6. Avaliar qualidade do prompt
+
+Mude o nome do prompt
+
+    prompts_to_evaluate = [
+        "bug-to-user-story-v2",
+    ]
+
+python src/evaluate.py
+
