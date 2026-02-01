@@ -62,7 +62,7 @@ Achei que era com estas métricas que precisava serem entregues
 ## Feedbacks LangSmith
 
 ### Primeira Rodada
-Fiz uma leitura dos feedbacks, e as User Stories não era efetivas e claras, eram verbosas e não comunicavam de forma efiente do que se precisava resolver
+Fiz uma leitura dos feedbacks, e as User Stories não era efetivas e claras, eram verbosas e não comunicavam de forma eficiente o que se precisava resolver. As respostas não cobriam o que se esperava o eram explicações densas e incompletas
 
 #### Avaliação Geral (Score)
 
