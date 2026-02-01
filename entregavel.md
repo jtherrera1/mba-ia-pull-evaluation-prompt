@@ -51,8 +51,12 @@ EVAL_MODEL=gemini-2.5-pro
 ![custo gerado pelo processamento](custo.png)
 
 ## Resultados
-
+Tone Score, Aceceptance, User Story Format, Completeness
 ![resultado esperado](resultado.png)
+
+F1-Score, Clarity, Precision
+![resultado esperado](precision-recall-f1.png)
+
 
 ## Prompt
 https://smith.langchain.com/hub/herrera-fullcyle-desafio2/h3rr3ra
