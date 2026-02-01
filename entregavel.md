@@ -181,7 +181,7 @@ Reforça-se o padrão observado: alta precisão técnica e excelente estruturaç
 </small>
 
 ## Prompt Final no Smith Langchain
-https://smith.langchain.com/hub/herrera-fullcyle-desafio2/h3rr3ra
+https://smith.langchain.com/hub/herrera-fullcyle-desafio2/bug-to-user-story-v2
 
 ## Como Executar
 ```bash
