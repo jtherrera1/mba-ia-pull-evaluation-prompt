@@ -51,12 +51,134 @@ EVAL_MODEL=gemini-2.5-pro
 ![custo gerado pelo processamento](custo.png)
 
 ## Resultados
-Tone Score, Aceceptance, User Story Format, Completeness
+### Tone Score, Aceceptance, User Story Format, Completeness
+Última rodada
 ![resultado esperado](resultado.png)
 
-F1-Score, Clarity, Precision
+### F1-Score, Clarity, Precision
+Achei que era com estas métricas que precisava serem entregues
 ![resultado esperado](precision-recall-f1.png)
 
+## Feedbacks LangSmith
+
+### Primeira Rodada
+Fiz uma leitura dos feedbacks, e as User Stories não era efetivas e claras, eram verbosas e não comunicavam de forma efiente do que se precisava resolver
+
+#### Avaliação Geral (Score)
+
+<small>
+
+**Score:** 0.75  
+
+**Análise:**  
+A resposta é extremamente bem organizada e tecnicamente precisa, sem ambiguidades.  
+No entanto, a clareza é prejudicada pela falta de concisão. O modelo gerou um documento técnico excessivamente longo (11 seções), extrapolando o escopo da pergunta.  
+Apesar da profundidade impressionante, a resposta se torna densa e menos eficiente para comunicação rápida e objetiva.
+
+</small>
+
+---
+
+#### Precisão vs Recall — Caso 1
+
+<small>
+
+**Precision:** 1.0  
+**Recall:** 0.5  
+
+**Análise:**  
+A precisão é máxima, pois a análise e a user story do problema de pagamento são corretas e altamente relevantes.  
+Porém, o recall é limitado: dois dos quatro problemas críticos solicitados (XSS e race condition de cupom) foram completamente ignorados.  
+A resposta é excelente no que cobre, mas incompleta em relação ao escopo total esperado.
+
+</small>
+
+---
+
+#### Precisão vs Recall — Caso 2
+
+<small>
+
+**Precision:** 1.0  
+**Recall:** 0.25  
+
+**Análise:**  
+A resposta apresenta alta qualidade técnica e profundidade, refletindo precisão elevada.  
+Entretanto, aborda apenas um dos quatro problemas críticos (ordenação), omitindo conflitos de dados, uploads resilientes e crashes de memória por sincronização em lote.  
+O foco restrito resulta em um recall extremamente baixo.
+
+</small>
+
+---
+
+### Segunda Rodada
+
+Depois da segunda rodada, adicionei seções obrigatorias, mas o que ajudou de fato nos relatos foi a llm struturar a seções. Nem todas as stories são complexas e não precisam de todas as seções.
+A llm precisa indicar o necessario para criar a story, e não usar palavras que fujam do escopo.
+Tentei olhar o feeedback e ir acertando o prompt
+
+Depois apliquei a terceira rodada usando as métricas corretas
+
+#### Avaliação Geral (Score)
+
+<small>
+
+**Score:** 0.7  
+
+**Análise:**  
+A resposta é extremamente bem organizada, precisa e livre de ambiguidades.  
+Contudo, sofre severamente com falta de concisão, transformando um simples relato de bug em um documento técnico exaustivo.  
+O uso excessivo de jargões técnicos e o volume de informação acabam ofuscando a mensagem principal.
+
+</small>
+
+---
+
+#### Precisão vs Recall — Caso 1
+
+<small>
+
+**Precision:** 1.0  
+**Recall:** 0.6  
+
+**Análise:**  
+A precisão é total, pois todo o conteúdo é correto, relevante e bem estruturado, adotando adequadamente a persona de PM.  
+O recall é parcial devido à omissão de critérios importantes de aceitação e acessibilidade, como:
+- Largura do modal (90%)
+- Fechamento com tecla ESC
+- Gestão de foco do teclado
+- Fechamento ao clicar no backdrop
+
+</small>
+
+---
+
+#### Avaliação de Foco e Escopo
+
+<small>
+
+**Score:** 0.75  
+
+**Análise:**  
+A resposta é factualmente correta e tecnicamente sólida, sem alucinações.  
+No entanto, apresenta foco extremamente limitado ao abordar apenas um dos quatro problemas críticos, ignorando XSS, race condition e UX.  
+A ground truth esperada adota uma abordagem holística, tornando a resposta apenas parcialmente alinhada ao escopo solicitado.
+
+</small>
+
+---
+
+#### Precisão vs Recall — Caso Repetido
+
+<small>
+
+**Precision:** 1.0  
+**Recall:** 0.6  
+
+**Análise:**  
+Reforça-se o padrão observado: alta precisão técnica e excelente estruturação, mas com lacunas relevantes nos critérios de aceitação e acessibilidade esperados.
+
+</small>
 
 ## Prompt
 https://smith.langchain.com/hub/herrera-fullcyle-desafio2/h3rr3ra
