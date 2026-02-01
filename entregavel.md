@@ -113,7 +113,7 @@ O foco restrito resulta em um recall extremamente baixo.
 
 ### Segunda Rodada
 
-Depois da segunda rodada, adicionei seções obrigatorias, mas o que ajudou de fato nos relatos foi a llm struturar a seções. Nem todas as stories são complexas e não precisam de todas as seções.
+Depois da segunda rodada, adicionei seções obrigatorias, mas o que ajudou de fato nos relatos foi a llm estruturar a seções. Nem todas as stories são complexas e não precisam de todas as seções.
 A llm precisa indicar o necessario para criar a story, e não usar palavras que fujam do escopo.
 Tentei olhar o feeedback e ir acertando o prompt
 
